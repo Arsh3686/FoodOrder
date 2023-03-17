@@ -1,0 +1,174 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.sub-Grid2_1 {
+	background-color: rgba(85, 236, 236, 0.781);
+	display: grid;
+	grid-template-rows: 20% 80%;
+	border-radius: 15px;
+}
+
+.flex {
+	background-color: #46f8a2;
+	display: grid;
+
+	grid-template-columns: repeat(auto-fit, 1fr);
+
+	border-radius: 15px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.card_divide1 {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card_divide1 .rating {
+	width: fit-content;
+	padding: 5px;
+	border-radius: 15px;
+	background-color: black;
+	display: flex;
+	margin-left: 10px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card_divide1 .rating .h4 {
+	color: white;
+	transform: translateY(1px);
+	margin-left: 3px;
+	font-weight: lighter;
+}
+
+.card_divide1 .heart {
+	/* background-color: azure; */
+	background-color: transparent;
+	/* border-radius: 15px; */
+	/* padding: 3px; */
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.card_divide1 .heart .image {
+	/* background-image: ; */
+	background-image: image("/public/images/heart.png");
+}
+
+.card_divide1 .redheart {
+	background-image: image("/public/images/redheart.png");
+	background-color: transparent;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.Container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+}
+
+.card_divide1 .heart img {
+	object-fit: cover;
+	width: 22px;
+	height: 22px;
+}
+
+.card_divide2 {
+	display: flex;
+	flex-direction: column;
+	/* background-color: burlywood; */
+	justify-content: space-evenly;
+	position: relative;
+}
+
+.card_divide2 .img {
+	display: flex;
+	justify-content: center;
+}
+
+.card_divide2 img {
+	border-radius: 50%;
+	object-fit: cover;
+	width: 130px;
+	height: 130px;
+	background-color: grey;
+}
+
+.card_divide2 .details {
+	width: 100%;
+	display: flex;
+	/* align-items: center; */
+	flex-direction: column;
+	/* justify-content: space-around; */
+}
+
+.card_divide2 .details .nameandweight {
+	/* height: 100%; */
+	/* background-color: indianred; */
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	/* margin-left: 10px;
+    margin-right: 10px; */
+}
+.card_divide2 .details .nameandweight .name {
+	/* margin-top: 10px; */
+	/* background-color: indigo; */
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	width: 70%;
+	font-weight: 600;
+	font-size: 15px;
+}
+.nameandweight .weight {
+	/* margin-left: 20px; */
+	/* width: 40px; */
+	/* height: fit-content; */
+	border-radius: 10px;
+	padding: 5px;
+	color: rgb(185, 175, 175);
+	background-color: rgb(223, 214, 231);
+}
+
+.card_divide2 .details .price .prices {
+	/* display: flex; */
+	/* width: 190px; */
+
+	/* background-color: yellow; */
+	/* align-items: center; */
+	margin-left: 10px;
+	font-size: 15px;
+
+	/* justify-content: space-between; */
+}
+
+.card_divide2 .details .price .button img {
+	position: absolute;
+	/* left: 35px; */
+	z-index: 1000;
+	width: 35px;
+	height: 35px;
+	/* transform: translateY(18px); */
+	right: 26px;
+	bottom: -17px;
+	cursor: pointer;
+}
+
+.card_divide2 .details .price h4 {
+	margin-top: 5px;
+	font-size: 20px;
+}
+
+@media (max-width: 400px) {
+	.Grid2 {
+		/* display: grid; */
+		grid-template-columns: minmax(1fr);
+	}
+}

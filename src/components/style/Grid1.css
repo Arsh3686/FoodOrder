@@ -1,0 +1,7 @@
+.sidebar {
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+	color: #00f57fb9;
+	/* color: ; */
+}
